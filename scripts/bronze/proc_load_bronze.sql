@@ -10,6 +10,7 @@ Script Purpose:
     It performs the following actions:
     - Truncates the Bronze tables before loading data.
     - Uses the PostgreSQL COPY command to load CSV files into the Bronze tables.
+    - Put the project folder in C:\ to avoid file path length, special character, and permission issues that can prevent the PostgreSQL COPY command from accessing the CSV files.
 
 Parameters:
     None.
